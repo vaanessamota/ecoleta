@@ -13,6 +13,29 @@
 
 ## [Figma](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta?node-id=136%3A546)
 
+## Como executar
+
+```
+# Instale as dependências
+  $ npm install
+
+  ## Crie o banco de dados
+  $ cd server
+  $ npm run knex:migrate
+  $ npm run knex:seed
+
+  # Inicie a API
+  $ npm run dev
+
+  # Inicie a aplicação web
+  $ cd web
+  $ npm start
+
+  # Inicie a aplicação mobile
+  $ cd mobile
+  $ npm start
+```
+
 ## API
 
   * Endpoint Items ` /items `
@@ -93,4 +116,9 @@
   * Endpoint Points ` /points `
       * POST Criar ponto de coleta
       * Campos: name, email, whatsapp, latitude, longitude, city, uf, items[] 
+      
+## Referências
+
+   Aulas ministradas por [Diego Fernandes](https://github.com/diego3g) <br>
+   Sessão do README "Como Executar" inspirada no repo [vitorserrano](https://github.com/vitorserrano/ecoleta)
       
